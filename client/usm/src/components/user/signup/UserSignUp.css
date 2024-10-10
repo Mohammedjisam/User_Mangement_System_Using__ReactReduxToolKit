@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0d18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #1c1f2e;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="file"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #30344e;
+    color: #ffffff;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Placeholder styles */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="number"]::placeholder,
+input[type="password"]::placeholder {
+    color: #bbbbbb;
+}
+
+/* Styling for the file input (profile photo) */
+input[type="file"] {
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+}
+
+input[type="file"]::file-selector-button {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #0b0d18;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #dddddd;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Submit Button */
+.submit-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #0b0d18;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #dddddd;
+}
+
+/* Sign-in text */
+.signin-text {
+    text-align: center;
+    color: #bbbbbb;
+    margin-top: 15px;
+}
+
+.signin-text a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.signin-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="password"],
+    input[type="file"] {
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+    }
+}

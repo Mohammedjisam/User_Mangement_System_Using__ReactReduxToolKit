@@ -1,0 +1,150 @@
+/* Reset and universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0d18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Admin Edit Container */
+.admin-edit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.admin-edit-card {
+    background-color: #1c1f2e;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.input-field,
+
+.input-file {
+    width: 80%; /* Set all input fields to 80% of the container width */
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    font-size: 16px;
+    background-color: #2a2d45;
+    color: #ffffff;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input[type="tel"]{
+    width: 90%; /* Set all input fields to 80% of the container width */
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    font-size: 16px;
+    background-color: #2a2d45;
+    color: #ffffff;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-file {
+    padding: 10px;
+}
+
+.input-field::placeholder,
+input[type="tel"]::placeholder {
+    color: #bbbbbb;
+}
+
+/* Input focus and hover */
+.input-field:focus,
+input[type="tel"]:focus,
+.input-file:focus {
+    border: 1px solid #ff6b6b;
+    background-color: #33334d;
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.7);
+}
+
+.input-field:hover,
+input[type="tel"]:hover,
+.input-file:hover {
+    background-color: #33334d;
+    border: 1px solid #444;
+}
+
+/* Error Styles */
+.error {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Submit Button */
+.btn.submit-btn {
+    width: 90%; /* Submit button width also set to 80% */
+    padding: 14px 0;
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn.submit-btn:hover {
+    background-color: #e55d5d;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .admin-edit-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .input-field,
+    input[type="tel"],
+    .input-file {
+        font-size: 14px;
+        width: 100%; /* Make input fields take full width on smaller screens */
+    }
+
+    .btn.submit-btn {
+        font-size: 14px;
+        width: 100%; /* Ensure the button also takes up full width */
+    }
+}

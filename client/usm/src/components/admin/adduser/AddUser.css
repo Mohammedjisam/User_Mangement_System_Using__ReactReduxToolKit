@@ -1,0 +1,128 @@
+/* Root color variables for easier dark theme management */
+:root {
+  --primary-color: #1c1e21;    /* Darker Gray/Black */
+  --secondary-color: #1abc9c;  /* Mint Green */
+  --accent-color: #3498db;     /* Lighter Blue */
+  --background-color: #18191a; /* Deep Dark Gray */
+  --text-color: #d1d2d6;       /* Light Gray */
+  --button-hover-color: #16a085; /* Darker Mint */
+  --input-background: #242526; /* Input background color */
+  --input-border: #3a3b3c;     /* Input border color */
+  --error-color: #e74c3c;      /* Error red color */
+}
+
+.adduser-admin-page {
+  display: flex;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.adduser-sidebar {
+  width: 25%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.adduser-sidebar h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+}
+
+.adduser-sidebar p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.adduser-register-container {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adduser-register-form {
+  background-color: var(--input-background);
+  padding: 20px; /* Reduced padding to lower form height */
+  border-radius: 8px; /* Slightly reduced border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Lighter shadow */
+  width: 400px; /* Moderately increased width for form */
+}
+
+.adduser-register-form h2 {
+  text-align: center;
+  margin-bottom: 10px; /* Reduced margin */
+  font-size: 1.6rem; /* Reduced font size */
+  color: var(--accent-color);
+}
+
+.adduser-form-group {
+  margin-bottom: 10px; /* Reduced margin between form fields */
+}
+
+.adduser-form-group label {
+  display: block;
+  font-size: 1rem; /* Slightly reduced font size */
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.adduser-form-group input {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  font-size: 1rem; /* Reduced font size */
+  background-color: var(--input-background);
+  border: 1px solid var(--input-border);
+  color: var(--text-color);
+  border-radius: 4px; /* Slightly reduced border-radius */
+}
+
+.adduser-form-group input:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 4px rgba(26, 188, 156, 0.5); /* Reduced shadow */
+}
+
+.adduser-register-btn {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  background-color: burlywood;
+  color: white;
+  border: none;
+  margin-left: 0px;
+  border-radius: 4px; /* Reduced border-radius */
+  font-size: 1rem; /* Reduced font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.adduser-register-btn:hover {
+  background-color: var(--button-hover-color);
+}
+
+.adduser-login-prompt {
+  text-align: center;
+  margin-top: 10px; /* Reduced margin */
+  color: var(--text-color);
+}
+
+.adduser-login-prompt a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.adduser-login-prompt a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Error styling */
+.error {
+  color: var(--error-color);
+  font-size: 0.8rem; /* Slightly reduced font size */
+}

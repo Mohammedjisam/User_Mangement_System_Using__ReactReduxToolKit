@@ -1,0 +1,120 @@
+/* Reset and universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0d18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Admin Home Container */
+.admin-home-container {
+    display: flex;
+    background-color: #1c1f2e;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+}
+
+/* Left Side */
+.admin-home-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.admin-home-left h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.admin-home-left p {
+    color: #bbbbbb;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Right Side */
+.admin-home-right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.admin-info {
+    background-color: #23263a;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.admin-info h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.admin-info p {
+    color: #bbbbbb;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.admin-info p strong {
+    color: #ffffff;
+}
+
+/* Buttons */
+.admin-home-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-btn, .logout-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #0b0d18;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover, .logout-btn:hover {
+    background-color: #dddddd;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .admin-home-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admin-home-left,
+    .admin-home-right {
+        padding: 20px 0;
+    }
+
+    .admin-home-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dashboard-btn, .logout-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}

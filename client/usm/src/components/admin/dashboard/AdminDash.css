@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f; /* Dark background for contrast */
+    color: #ffffff; /* Text color */
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #252733; /* Dark sidebar */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Increased shadow for depth */
+    transition: width 0.3s; /* Smooth transition for width changes */
+}
+
+.sidebar h2 {
+    color: #3fb950; /* Sidebar heading color */
+    margin-bottom: 0px;
+    font-size: 1.5em; /* Increase font size for headers */
+}
+
+.home-btn {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for top/bottom and left/right */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Font size */
+    margin-right: 10px; /* Space from the next button */
+    transition: background-color 0.3s; 
+    margin-left: 45px;/* Smooth background color transition */
+  }
+  
+  .home-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .home-btn:focus {
+    outline: none; /* Remove outline on focus */
+  }
+
+/* Main Dashboard Styles */
+.dashboard-main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    background-color: #2b2b3d; /* Slightly lighter background for main area */
+    border-radius: 8px; /* Round corners for a modern look */
+}
+
+/* Header Styles */
+.dashboard-header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3fb950; /* Underline for emphasis */
+    padding-bottom: 10px; /* Spacing below header */
+}
+
+/* Search Input Styles */
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px; /* Set a fixed width for search */
+    background-color: #3b3b4b; /* Input background color */
+    color: #ffffff; /* Input text color */
+    transition: background-color 0.3s, box-shadow 0.3s;
+   /* Smooth transition for effects */
+}
+
+/* Input Focus Effect */
+.search-input:focus {
+    outline: none; /* Remove default outline */
+    background-color: #474757; /* Change background on focus */
+    box-shadow: 0 0 5px rgba(63, 185, 80, 0.5); /* Glow effect */
+    border: px solid white;
+}
+
+.no-user-message {
+    text-align: center;
+    color: #888; /* Light gray color for the message */
+    font-weight: bold;
+    font-size: 16px; /* Adjust size as needed */
+  }
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Add transform for a button effect */
+    margin-left: 10px; /* Margin between buttons */
+    flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+.add-new-btn {
+    background-color: #3fb950;
+  /* Green */
+}
+
+.logout-btn {
+    background-color: #f85149; 
+    width: 100px;/* Red */
+}
+
+.search-btn {
+    background-color: #007bff; 
+    width: 100px;/* Blue */
+}
+
+/* Button Hover Effects */
+button:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.add-new-btn:hover {
+    background-color: #2ea043; /* Darker green on hover */
+}
+
+.logout-btn:hover {
+    background-color: #da3633; /* Darker red on hover */
+}
+
+.search-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Table Styles */
+.users-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between borders */
+    margin-top: 20px; /* Margin for spacing */
+}
+
+.users-table th, .users-table td {
+    padding: 15px;
+    border-bottom: 1px solid #444; /* Add a bottom border */
+    text-align: left; /* Align text to the left */
+}
+
+.users-table th {
+    background-color: #252733; /* Dark header */
+    color: #3fb950; /* Header text color */
+    font-size: 1.1em; /* Slightly larger font for header */
+}
+
+.users-table tr:hover {
+    background-color: #333; /* Row hover effect */
+}
+
+.profile-image {
+    width: 50px; /* Fixed size for profile images */
+    height: 50px; /* Fixed size for profile images */
+    border-radius: 15%; /* Make images circular */
+    border: px solid #3fb950; /* Add border around profile images */
+}
